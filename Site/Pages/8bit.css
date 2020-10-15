@@ -1,0 +1,26 @@
+body {
+    background-image: url("../Images/Background/Background4.png"), url("../Images/Background/BK.png");
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+    background-position: center 0%;
+    overflow: hidden;
+}
+@font-face {
+	font-family: "Pixel";
+    src: url("../Police/VISITOR.FON");
+	src: url("../Police/Visitor1.ttf");
+    src: url("../Police/Visitor2.ttf");
+}
+
+h1 {text-align: center;
+    color: white;
+    font-size: 250%;
+    font-family: "Pixel";
+    position: relative;
+    top: -100;
+}
+#Pipe {position: relative;
+       top: -15px; }
+/* Le positionnage de la vidéo ci dessous */
+iframe {position:relative;
+    top: 5px;}

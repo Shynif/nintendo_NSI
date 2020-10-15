@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel = "stylesheet" href = "Gameboy.css">
+        <link rel="icon" href="../Images/pp.png">
+        <title>La Gameboy</title>
+    </head>
+    <body>
+        <div style = "position:relative; top:-80px;">
+        <h1>
+            <a href="../../main.html">
+                <img src="../Images/Pipe.png" width="200" height="200" id="Pipe" title="Sortir">
+            </a>
+        </h1>
+        <h1 id = texte>
+             En 1989 la game boy est mise en vente et est encore un grand succès pour l’entreprise si ce n’est l’un des plus grands, avec ses 100 millions d’exemplaires vendus c’est                une des consoles les plus vendus au monde ! C’est dessus qu’on pouvait jouer au célèbre Tetris.
+        <br>
+        <img id = GB src="../Images/Gameboy.png" width="30%" title="Une Gameboy"> <br>
+        </h1>
+        </div>
+        
+        <!-- Musique ! -->
+        <audio src="../../Audio/mario_under_song.mp3" id="aud_" loop="loop"></audio>
+        <script type="text/javascript">
+                window.onload= function() {
+                document.getElementById("aud_").play();
+            }
+        </script>
+        
+    </body>
+</html>

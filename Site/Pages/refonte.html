@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel = "stylesheet" href = "refonte.css">
+        <link rel="icon" href="../Images/pp.png">
+        <title>Les Gameboys</title>
+    </head>
+    <body>
+        <div style = "position:relative; top:-80px;">
+            <h1>
+                <a href="../../main.html">
+                    <img src="../Images/Pipe.png" width="200" height="200" id="Pipe" title="Sortir">
+                </a>
+            </h1>
+            <h1 id = texte>
+                 Comment faire une console qui va bien marcher ? Reprendre le concept d’une ancienne console et l’améliorer ! Nintendo arrive donc avec nouveau projet et sort toute une                floppée de Game boy : La Game Boy Light, la Game boy Color, la Game boy Advance et la Game Boy Micro, accessoires compris : La Game Boy Printer, la Game Boy Camera…
+                <br><br>
+                (cliquez sur la gameboy)
+                <br>
+                <!-- La GameBoy change de couleur quand on clique dessus -->
+                <img id="Gameboy" src="../Images/GameboyC/GB1.png" width="40%" onclick="ColorImage();"> <br>
+            </h1>
+        </div>
+        
+        <!-- Musique ! -->
+        <audio src="../../Audio/mario_under_song.mp3" id="aud_" loop="loop"></audio>
+        <script type="text/javascript">
+            var count_ = 4;
+            window.onload= function() {
+                document.getElementById("aud_").play();
+            }
+            function ColorImage() {
+                count_++;
+                if (count_ >= 4) count_ = 0;
+                if (count_== 0) {
+                    document.getElementById("Gameboy").src="../Images/GameboyC/GB1.png";
+                }
+                if (count_== 1) {
+                    document.getElementById("Gameboy").src="../Images/GameboyC/GB2.png";
+                }
+                if (count_== 2) {
+                    document.getElementById("Gameboy").src="../Images/GameboyC/GB3.png";
+                }
+                if (count_== 3) {
+                    document.getElementById("Gameboy").src="../Images/GameboyC/GB4.png";
+                }
+                if (count_== 4) {
+                    document.getElementById("Gameboy").src="../Images/GameboyC/GB5.png";
+                }
+            }
+        </script>
+        
+    </body>
+</html>

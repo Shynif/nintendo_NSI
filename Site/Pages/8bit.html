@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel = "stylesheet" href = "8bit.css">
+        <link rel="icon" href="../Images/pp.png">
+        <title>C'est quoi le 8-bit ?</title>
+    </head>
+    <body>
+        <div style = "position:relative; top:-80px;">
+        <h1>
+            <a href="Arcade.html">
+                <img src="../Images/Pipe.png" width="200" height="200" id="Pipe" title="Sortir">
+            </a>
+            <br>
+            Lorsque les couleurs sont en 8-bit cela veut dire que<br>
+            les couleurs du jeu font 8-bit soit, un octet,<br>
+            mais si vous voulez en savoir plus a propos des 8-bit,<br>
+            regardez la vidéo ci dessous !
+        <br><br><br>
+            <iframe width="40%" height="400px" src="https://www.youtube.com/embed/QaIoW1aL9GE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- Rappel a l'utilisateur d'utiliser le mode plein écrans-->
+            <br>(f11)
+        </h1>
+        </div>
+        
+        <!-- Musique ! -->
+        <audio src="../../Audio/mario_under_song.mp3" id="aud_" loop="loop"></audio>
+        <script type="text/javascript">
+            window.onload= function() {
+            document.getElementById("aud_").play();
+        }
+        </script>
+        
+    </body>
+</html>

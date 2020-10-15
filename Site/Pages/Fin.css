@@ -1,0 +1,40 @@
+body {
+    background-image: url("../Images/Background/Background14.png"), url("../Images/Background/BK.png");
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+    background-position: center 0%;
+    overflow: hidden;
+}
+
+h1 {position:relative;
+    text-align:center;
+    color: white;
+    font-size: 300%;
+    font-family: Helvetica;
+    top: -100;
+}
+
+#Pipe {top: -15px;
+}
+#texte {margin-left: 10%;
+        text-align:justify;
+        margin-right: 10%}
+img {position: relative;
+     text-align: center;
+}
+
+
+footer {
+    display: flex;
+	justify-content: center;
+    background-color: #22a1ff;
+	text-align:center;
+    color: white;
+    font-size: 100%;
+    font-family: Helvetica;
+	position: absolute;
+	margin: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}

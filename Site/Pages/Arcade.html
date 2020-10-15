@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel = "stylesheet" href = "Arcade.css">
+        <link rel="icon" href="../Images/pp.png">
+        <title>L'arcade et le 8-bit</title>
+    </head>
+    <body>
+        <div style = "position:relative; top:-80px;">
+        <h1>
+            <a href="../../main.html">
+                <img src="../Images/Pipe.png" width="200" height="200" id="Pipe" title="Sortir">
+            </a>
+            <br>
+            Vers années 70 elle commence a produire des bornes d’arcades et<br> le tout premier jeu Mario né : Donkey Kong. Il s’agit d’un platformer<br> dans lequel Mario doit sauver Pauline des mains de Donkey Kong.<br> Le jeu se déroule sur un seul écran fixe et possède des graphismes<br> basiques due aux limitations du 8-bit.
+        </h1>
+        <h1>
+            <a href="8bit.html">
+                <img src="../Images/JumpMan.gif" width="33%">
+            </a>
+            <img src="../Images/DK.gif" width="31%" id="DK">
+            <a href="Arcade2.html">
+                <img src="../Images/Borne_arcade.png" width="20%" id="arcade">
+            </a>
+            <figcaption>Cliques sur la borne d'arcade et Mario !</figcaption>
+        </h1>
+        </div>
+        
+        <!-- Musique ! -->
+        <audio src="../../Audio/mario_under_song.mp3" id="aud_" loop="loop"></audio>
+        <script type="text/javascript">
+                window.onload= function() {
+                document.getElementById("aud_").play();
+            }
+        </script>
+        
+    </body>
+</html>

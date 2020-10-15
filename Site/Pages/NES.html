@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel = "stylesheet" href = "NES.css">
+        <link rel="icon" href="../Images/pp.png">
+        <title>La NES</title>
+    </head>
+    <body>
+        <div style = "position:relative; top:-80px;">
+        <h1>
+            <a href="../../main.html">
+                <img src="../Images/Pipe.png" width="200" height="200" id="Pipe" title="Sortir">
+            </a>
+        </h1>
+        <h1 id = texte>
+             En 1983 Nintendo sort la Family Computer (les jeux vidéo étaient nouveaux à l’époque, il fallait que cela donne envie aux parents). Vous la connaissez probablement sous                le nom de la Nintendo Entertainment System ou devrais-je dire, la NES. C’est sur cette console qu’est apparu le tout premier The Legend of Zelda, Metroid et surtout Super              Mario Bros, un des jeux les plus vendus au monde avec 40,24 millions d’exemplaire vendus.<br><br>
+             On pouvait également acheter des accessoires comme R.O.B par exemple (la plupart furent sans succès).<br><br>
+             En moyenne, les jeux de la NES faisaient 1,6 Mégaoctet.<br><br>
+             La nes était programmé majoritairement en Assembly language.
+        <br>
+        <img id = NES src="../Images/NES.png" width="50%" title="Une télécommande de la NES"> <br>
+        </h1>
+        </div>
+        
+        <!-- Musique ! -->
+        <audio src="../../Audio/mario_under_song.mp3" id="aud_" loop="loop"></audio>
+        <script type="text/javascript">
+                window.onload= function() {
+                document.getElementById("aud_").play();
+            }
+        </script>
+        
+    </body>
+</html>

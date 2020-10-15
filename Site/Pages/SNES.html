@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel = "stylesheet" href = "SNES.css">
+        <link rel="icon" href="../Images/pp.png">
+        <title>La SNES</title>
+    </head>
+    <body>
+        <div style = "position:relative; top:-80px;">
+        <h1>
+            <a href="../../main.html">
+                <img src="../Images/Pipe.png" width="200" height="200" id="Pipe" title="Sortir">
+            </a>
+        </h1>
+        <h1 id = texte>
+             En 1990, Nintendo sort la SNES (Super Nes), l’évolution de la Super Nintendo possédant des jeux en 16 bit cette fois ci. On retrouvera dessus le tout premier Mario kart,              le premier Donkey Kong country et le premier Yoshi Island. Super Mario bros aura droit à un nouveau jeu également : super Mario world.<br><br>
+             La console est encore est toujours programmée en Assembly language.<br><br>
+             La RAM (mémoire vive) de la console s’élève à 128Ko.
+        <br>
+        <img id = NES src="../Images/SNES.png" width="50%" title="Une télécommande de la SNES"> <br>
+        </h1>
+        </div>
+        
+        <!-- Musique ! -->
+        <audio src="../../Audio/mario_under_song.mp3" id="aud_" loop="loop"></audio>
+        <script type="text/javascript">
+                window.onload= function() {
+                document.getElementById("aud_").play();
+            }
+        </script>
+        
+    </body>
+</html>

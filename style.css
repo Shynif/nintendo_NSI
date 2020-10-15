@@ -1,0 +1,618 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(92, 148, 252);
+    image-rendering: pixelated;
+    overflow: hidden;
+}
+
+@font-face {
+	font-family: "Pixel";
+    src: url("Site/Police/VISITOR.FON");
+	src: url("Site/Police/Visitor1.ttf");
+    src: url("Site/Police/Visitor2.ttf");
+}
+
+
+/* Met la taille de chaque Slide à la taille de l'écran */
+.slide {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+/* Horiontal
+Source du code :  Red Stapler - Pure CSS Horizontal Website Tutorial for Beginners  */
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 900vw; /* nombre de Slides (7*100 par exemple) chaque Slides faisant 1 écran de largeur */
+    transform: rotate(90deg) translateY(-100vh); /* tourner à l'horizontal */
+    transform-origin: top left; /* tourner à l'horizontal */
+}
+.outer-wrapper {
+    width: 100vh;  /* taille d'une slide */
+    height: 100vw; /* taille d'une slide */
+    transform: rotate(-90deg) translateX(-100vh); /* tourner à l'horizontal */
+    transform-origin: top left;
+    overflow-x: hidden; /* cacher la barre de scrolling */
+    overflow-y: scroll;
+    position: absolute;
+    
+    /* Adaptation pour enlever la barre de Scroll pour "chaque" navigateurs */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/* Partie avec toutes les styles des Slides */
+.Intro {
+    position: relative;
+    /*background-image: url(images/debut.png);
+    background-position: bottom;
+    background-size: 100vw;
+    background-repeat: no-repeat;*/
+}
+.Main {
+    /*background-image: url(images/slide3_bk.png);
+    background-position: bottom;
+    background-size: 100vw;
+    background-repeat: no-repeat;*/
+}
+.Main_2 {
+    /*background-image: url(images/slide3_bk.png);
+    background-position: bottom;
+    background-size: 100vw;
+    background-repeat: no-repeat;*/
+}
+.Main_3 {
+    /*background-image: url(images/slide3_bk.png);
+    background-position: bottom;
+    background-size: 100vw;
+    background-repeat: no-repeat;*/
+}
+.Main_4 {
+    /*background-image: url(images/slide3_bk.png);
+    background-position: bottom;
+    background-size: 100vw;
+    background-repeat: no-repeat;*/
+}
+.Main_5{}
+.Main_6{}
+.MainAvantFlag {
+    /*background-image: url(images/avant_flag.png);
+    background-position: bottom;
+    background-size: 100vw;
+    background-repeat: no-repeat;*/
+}
+.End {
+    /*background-image: url(images/end_flag.png);
+    background-position: bottom;
+    background-size: 100vw;
+    background-repeat: no-repeat;*/
+}
+
+
+
+/* Partie Images
+  fond des slides */
+#bk {
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+}
+
+/* Animation tuyau */
+@keyframes pipe_effect {
+  from {outline-offset: 2px;}
+  to {outline-offset: 8px;}
+}
+
+
+/* Tuyau n°1 */
+#pipe {
+    position: absolute;
+    left: 335vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_ {
+    position: absolute;
+    left: 335vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_:hover {
+	outline: 0.8vw dashed white;
+	outline-offset: 2px;
+	animation-name: pipe_effect;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+
+/* Tuyau n°2 */
+#pipe2 {
+    position: absolute;
+    left: 27.5vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_2 {
+    position: absolute;
+    left: 27.5vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_2:hover {
+	outline: 0.8vw dashed white;
+	outline-offset: 2px;
+	animation-name: pipe_effect;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+
+/* Tuyau n°3 */
+#pipe3 {
+    position: absolute;
+    left: 105vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_3 {
+    position: absolute;
+    left: 105vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_3:hover {
+	outline: 0.8vw dashed white;
+	outline-offset: 2px;
+	animation-name: pipe_effect;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+
+/* Tuyau n°4 */
+#pipe4 {
+    position: absolute;
+    left: 148vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_4 {
+    position: absolute;
+    left: 148vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_4:hover {
+	outline: 0.8vw dashed white;
+	outline-offset: 2px;
+	animation-name: pipe_effect;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+
+/* Tuyau n°5 */
+#pipe5 {
+    position: absolute;
+    left: 187vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_5 {
+    position: absolute;
+    left: 187vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_5:hover {
+	outline: 0.8vw dashed white;
+	outline-offset: 2px;
+	animation-name: pipe_effect;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+
+/* Tuyau n°6 */
+#pipe6 {
+    position: absolute;
+    left: 268vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_6 {
+    position: absolute;
+    left: 268vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_6:hover {
+	outline: 0.8vw dashed white;
+	outline-offset: 2px;
+	animation-name: pipe_effect;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+
+/* Tuyau n°7 */
+#pipe7 {
+    position: absolute;
+    left: 399vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_7 {
+    position: absolute;
+    left: 399vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_7:hover {
+	outline: 0.8vw dashed white;
+	outline-offset: 2px;
+	animation-name: pipe_effect;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+
+/* Tuyau n°8 */
+#pipe8 {
+    position: absolute;
+    left: 483vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_8 {
+    position: absolute;
+    left: 483vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_8:hover {
+	outline: 0.8vw dashed white;
+	outline-offset: 2px;
+	animation-name: pipe_effect;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+
+/* Tuyau n°9 */
+#pipe9 {
+    position: absolute;
+    left: 530vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_9 {
+    position: absolute;
+    left: 530vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_9:hover {
+	outline: 0.8vw dashed white;
+	outline-offset: 2px;
+	animation-name: pipe_effect;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+
+/* Tuyau n°10 */
+#pipe10 {
+    position: absolute;
+    left: 585vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_10 {
+    position: absolute;
+    left: 585vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_10:hover {
+	outline: 0.8vw dashed white;
+	outline-offset: 2px;
+	animation-name: pipe_effect;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+
+/* Tuyau n°11 */
+#pipe11 {
+    position: absolute;
+    left: 616vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_11 {
+    position: absolute;
+    left: 616vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_11:hover {
+	outline: 0.8vw dashed white;
+	outline-offset: 2px;
+	animation-name: pipe_effect;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+
+/* Tuyau n°12 */
+#pipe12 {
+    position: absolute;
+    left: 668vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_12 {
+    position: absolute;
+    left: 668vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_12:hover {
+	outline: 0.8vw dashed white;
+	outline-offset: 2px;
+	animation-name: pipe_effect;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+
+/* Tuyau n°13 */
+#pipe13 {
+    position: absolute;
+    left: 745vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_13 {
+    position: absolute;
+    left: 745vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_13:hover {
+	outline: 0.8vw dashed white;
+	outline-offset: 2px;
+	animation-name: pipe_effect;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+
+/* Tuyau n°14 */
+#pipe14 {
+    position: absolute;
+    left: 787vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_14 {
+    position: absolute;
+    left: 787vw;
+    width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
+    bottom: 0vh;
+}
+#pipe_14:hover {
+	outline: 0.8vw dashed white;
+	outline-offset: 2px;
+	animation-name: pipe_effect;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+
+/* PARTIE TEXTE */
+p {
+    color: white;
+    
+    font-family: "Pixel";
+    padding-top: 100vw;
+    padding-bottom: 100em; /* 10em après effet */
+	animation-name: text_effect;
+	animation-duration: 0.8s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+	animation-play-state: paused;
+}
+p:hover {
+    animation-name: text_effect;
+	animation-duration: 0.8s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+	animation-play-state: running;
+}
+p:not:hover {
+	animation-play-state: paused;
+}
+@keyframes text_effect {
+	from {padding-bottom: 100em;}
+	to {padding-bottom: 10em;}
+}
+
+/* Liste de crédit un peu nul */
+ul {
+    color: white;
+    font-size: 3vw;
+    font-family: "Pixel";
+	position: absolute;
+    bottom: 16vw;
+	left: 830vw;
+}
+
+/* text 1 */
+.text-block {
+	position: absolute;
+	bottom: -13vw;
+	left: 15vw;
+	color: white;
+    font-size: 3vw;
+}
+
+/* text 2 */
+.text-block2 {
+	position: absolute;
+	bottom: -1vw;
+	left: 83vw;
+	color: white;
+    font-size: 1.4vw;
+    text-align: center;
+}
+
+/* text 3 */
+.text-block3 {
+	position: absolute;
+	bottom: 1vw;
+	left: 134vw;
+	color: white;
+    font-size: 2vw;
+}
+
+/* text 4 */
+.text-block4 {
+	position: absolute;
+	bottom: -6vw;
+	left: 162vw;
+	color: white;
+    font-size: 2vw;
+}
+
+/* text 5 */
+.text-block5 {
+	position: absolute;
+	bottom: -9.5vw;
+	left: 250vw;
+	color: white;
+    font-size: 2vw;
+}
+
+/* text 6 */
+.text-block6 {
+	position: absolute;
+	bottom: 1vw;
+	left: 320vw;
+	color: white;
+    font-size: 2vw;
+}
+
+/* text 7 */
+.text-block7 {
+	position: absolute;
+	bottom: -23vw;
+	left: 388vw;
+	color: white;
+    font-size: 4vw;
+}
+
+/* text 8 */
+.text-block8 {
+	position: absolute;
+	bottom: -5vw;
+	left: 455vw;
+	color: white;
+    font-size: 4vw;
+}
+
+/* text 9 */
+.text-block9 {
+	position: absolute;
+	bottom: -25vw;
+	left: 520vw;
+	color: white;
+    font-size: 4vw;
+}
+
+/* text 10 */
+.text-block10 {
+	position: absolute;
+	bottom: -21.8vw;
+	left: 574.5vw;
+	color: white;
+    font-size: 4vw;
+}
+
+/* text 11 */
+.text-block11 {
+	position: absolute;
+	bottom: 11.5vw;
+	left: 600vw;
+	color: white;
+    font-size: 2vw;
+}
+
+/* text 12 */
+.text-block12 {
+	position: absolute;
+	bottom: -11vw;
+	left: 652vw;
+	color: white;
+    font-size: 2.5vw;
+}
+
+/* text 13 */
+.text-block13 {
+	position: absolute;
+	bottom: -11vw;
+	left: 732.5vw;
+	color: white;
+    font-size: 3vw;
+}
+
+/* text 14 */
+.text-block14 {
+	position: absolute;
+	bottom: -52vw;
+	left: 778vw;
+	color: white;
+    font-size: 6vw;
+}

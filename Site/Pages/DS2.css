@@ -1,0 +1,29 @@
+body {
+    background-image: url("../Images/Background/Background11.png"), url("../Images/Background/BK.png");
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+    background-position: center 0%;
+    overflow: hidden;
+}
+@font-face {
+	font-family: "Pixel";
+    src: url("../Police/VISITOR.FON");
+	src: url("../Police/Visitor1.ttf");
+    src: url("../Police/Visitor2.ttf");
+}
+
+h1 {position:relative;
+    text-align:center;
+    color: white;
+    font-size: 300%;
+    font-family: "Pixel";
+    top: -100;
+}
+
+#Pipe {top: -15px;
+}
+#texte {margin-left: 8%;
+        text-align:center;
+        margin-right: 8%}
+img {position: relative;
+}
