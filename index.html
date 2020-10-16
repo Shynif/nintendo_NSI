@@ -2,8 +2,8 @@
 <html>
     
     <head>
-        <title>Nintendo</title>
-        <link rel="icon" href="Site/Images/pp.png">
+        <title>Nintendo</title> <!-- Titre -->
+        <link rel="icon" href="Site/Images/pp.png"> <!-- Icone du site, IT'S ME MORIO ! -->
         <meta charset="UTF-8" /> <!-- Neo : Je connais le Russe -->
         <link rel="stylesheet" type="text/css" href="style.css" /> <!-- Le CSS est sublime ma chérie -->
     </head>
@@ -20,23 +20,23 @@
                 On a plusieurs slide (comme un powerpoint) qui se suivent à l'horizontal.
                 Chacune des slides contient :
                     -des images de tuyaux
-                    -l'image de la partie du niveau
-                    -le texte
-                    -la boite de collision des tuyaux
+                    -l'image de la partie du niveau (avec transparence pour voir le tuyau)
+                    -le texte (qui descend au-dessus des tuyaux)
+                    -la boite de collision des tuyaux (fait un joli contour + permet d'aller vers une autre page)
                 
                 -->
                 
                 
                 <!-- On ajoute les Slides ici -->
-                <div class="slide Intro">
-                    <img id="pipe2" src="images/pipe_64px.png">
-                    <img id="bk" src="images/debut.png">
-                    <div class="text-block">
+                <div class="slide Intro"> <!-- La Slide -->
+                    <img id="pipe2" src="images/pipe_64px.png"> <!-- Un tuyau au fond-->
+                    <img id="bk" src="images/debut.png"> <!-- La photo du niveau -->
+                    <div class="text-block"> <!-- Le bloc de texte -->
                         <p>
                             Qu'est ce que Nintendo ?
                         </p>
                     </div>
-                    <a href="Site/Pages/CquoiNintendo.html">
+                    <a href="Site/Pages/CquoiNintendo.html"> <!-- La boite de collision avec le lien -->
                         <img id="pipe_2" src="images/hitbox_64px.png">
                     </a>
                 </div>
@@ -117,6 +117,9 @@
                             Les refontes des anciennes consoles
                         </p>
                     </div>
+					<a href="secret/secret.html"> <!-- Nothing to see here, nothing suspicious going on -->
+						<img id="not_suspicious_id" src="images/hitbox_48px.png">
+					</a>
                     <a href="Site/Pages/N64.html">
                         <img id="pipe_7" src="images/hitbox_64px.png">
                     </a>
@@ -197,8 +200,12 @@
                 
                 <div class="slide End">
                     <img id="bk" src="images/end_flag.png">
+					<a href="index.html"> <!-- C'est la fin, DE REQUIN ! -->
+                        <img id="back_start" src="images/hitbox_48px.png">
+                    </a>
+					<!-- Jolie liste des crédit pour satisfaire M.Reveret -->
 					<ul>
-						<li>Site créé par :</li>
+						Site créé par :
 						<li>Antoine</li>
 						<li>Augustin</li>
 					</ul>
@@ -207,10 +214,10 @@
                 
                 
                 <!-- Musique ! -->
-                <audio src="Audio/mario_music.mp3" id="aud_" loop="loop"></audio>
-                <script type="text/javascript">
-                    window.onload= function() {
-                        document.getElementById("aud_").play();
+                <audio src="Audio/mario_music.mp3" id="aud_" loop="loop"></audio> <!-- Lance la musique -->
+                <script type="text/javascript"> // Javascript qui force la musique à se jouer :)
+                    window.onload= function() { // dès le lancement la fonction se lance
+                        document.getElementById("aud_").play(); // La musique se joue
                     }
                 </script>
                 
@@ -219,5 +226,22 @@
         </div>
     </body>
 	
+	<!--
+		Note au professeur de la part d'Antoine :
+			-je tiens à déclarer n'avoir utilisé AUCUNE aide autre que la vidéo pour le scrolling horizontal,
+			tout le code est fait par moi, Antoine, au prix de plusieurs très longue soirées de travail.
+			J'ai aucunement utilisé Bootstrap, Jquery (même si c'était tentant) et P5.JS, et je n'ai
+			pris d'idées à personne. Il y a pas à dire c'était dur mais au moins le site fonctionne avec
+			des techniques faite-maison unique et adaptées au site. Je tiens à ajouter que j'ai eu pas mal de
+			problèmes (maladie et autres projets) lors de la création du site. Aufaite prenez cette version comme
+			la "bonne" version du site, la version sur Git est très buggée (surement à cause de ma nullité sur Git).
+			Tout cela juste pour dire, "oui, le site ressemble à un vieux site du début des années 2000, voilà".
+            
+            Sinon pour la répartition des tâches, j'ai fait le site "hub", Augustin un petit qu'il a CTRL C/V 14 fois puis modifier que j'ai après re-modifier
+            Code : Antoine majoritairement, Augustin
+            Texte : Augustin
+            
+            je tiens vraiment a remercié Augustin qui a beaucoup aider pour le site surtout quand j'étais malade. Un duo à refaire !
+	-->
     
 </html>

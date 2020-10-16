@@ -12,12 +12,18 @@ body {
     src: url("../Police/Visitor2.ttf");
 }
 
-h1 {text-align: center;
+h1 {
+	text-align: center;
     color: white;
     font-size: 250%;
     font-family: "Pixel";
     position: relative;
     top: -100;
 }
-img { position: relative; top: 8px; }
-#Pipe {top: -15px; }
+img {
+	position: relative;
+	top: 8px;
+}
+#Pipe {
+	top: -15px;
+}

@@ -12,15 +12,20 @@ body {
     src: url("../Police/Visitor2.ttf");
 }
 
-h1 {text-align: center;
+h1 {
+	text-align: center;
     color: white;
     font-size: 250%;
     font-family: "Pixel";
     position: relative;
     top: -100;
 }
-#Pipe {position: relative;
-       top: -15px; }
+#Pipe {
+	position: relative;
+    top: -15px;
+}
 /* Le positionnage de la vidéo ci dessous */
-iframe {position:relative;
-    top: 5px;}
+iframe {
+	position:relative;
+    top: 5px;
+}

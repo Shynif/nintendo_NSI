@@ -1,13 +1,13 @@
 body {
-    margin: 0;
+    margin: 0; /* No gap allowed here */
     padding: 0;
-    background: rgb(92, 148, 252);
-    image-rendering: pixelated;
+    background: rgb(92, 148, 252); /* Fond à la couleur de 1-1 de Super Mario Bros */
+    image-rendering: pixelated; /* Pour éviter d'avoir du flou partout */
     overflow: hidden;
 }
 
 @font-face {
-	font-family: "Pixel";
+	font-family: "Pixel"; /* j'adore ce font, je l'utilise presque toujours dans mes jeux :) */
     src: url("Site/Police/VISITOR.FON");
 	src: url("Site/Police/Visitor1.ttf");
     src: url("Site/Police/Visitor2.ttf");
@@ -23,7 +23,7 @@ body {
 
 
 /* Horiontal
-Source du code :  Red Stapler - Pure CSS Horizontal Website Tutorial for Beginners  */
+Source du code :     Red Stapler - Pure CSS Horizontal Website Tutorial for Beginners        sur Youtube */
 .wrapper {
     display: flex;
     flex-direction: row;
@@ -40,7 +40,7 @@ Source du code :  Red Stapler - Pure CSS Horizontal Website Tutorial for Beginne
     overflow-y: scroll;
     position: absolute;
     
-    /* Adaptation pour enlever la barre de Scroll pour "chaque" navigateurs */
+    /* Adaptation pour enlever la barre de Scroll pour "chaque" navigateurs :| */
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
@@ -50,7 +50,9 @@ Source du code :  Red Stapler - Pure CSS Horizontal Website Tutorial for Beginne
 
 
 
-/* Partie avec toutes les styles des Slides */
+/*  Partie avec tout les styles des Slides
+	Alors, après coup on l'a plus utilisé du tout :/
+*/
 .Intro {
     position: relative;
     /*background-image: url(images/debut.png);
@@ -99,15 +101,15 @@ Source du code :  Red Stapler - Pure CSS Horizontal Website Tutorial for Beginne
 
 
 
-/* Partie Images
-  fond des slides */
+/* Partie Images !
+  fond des slides  */
 #bk {
     position: fixed;
     width: 100vw;
     bottom: 0;
 }
 
-/* Animation tuyau */
+/* Animation (boite de collision) tuyau */
 @keyframes pipe_effect {
   from {outline-offset: 2px;}
   to {outline-offset: 8px;}
@@ -116,25 +118,27 @@ Source du code :  Red Stapler - Pure CSS Horizontal Website Tutorial for Beginne
 
 /* Tuyau n°1 */
 #pipe {
-    position: absolute;
-    left: 335vw;
+    position: absolute; /* position par rapport au début */
+    left: 335vw; /* Position par rapport au début, chaque slide faisant 100vw alors dans le cas présent le tuyau est à la 3ème slide */
     width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
-    bottom: 0vh;
+    bottom: 0vh; /* Touche le sol */
 }
+/* cette partie est pour la boite de collision */
 #pipe_ {
-    position: absolute;
+    position: absolute;  /* même placement pour surperposer le "vrai" tuyau */
     left: 335vw;
     width: 7.625vw;  /*    une slide fait 488px et un tuyau 64    488/64 = 7.625     */
     bottom: 0vh;
 }
+/* Effet quand on passe la souris dessus */
 #pipe_:hover {
-	outline: 0.8vw dashed white;
+	outline: 0.8vw dashed white; /* fait un jolie effet de surlignage avec des pointillés */
 	outline-offset: 2px;
-	animation-name: pipe_effect;
+	animation-name: pipe_effect; /* Animation des pointillés (juste l'écart des pointillés change) */
 	animation-duration: 1s;
-	animation-timing-function: ease-in;
-	animation-direction: alternate;
-	animation-iteration-count: infinite;
+	animation-timing-function: ease-in; /* Effet smooth */
+	animation-direction: alternate; /* revient-repart-revient-repart PING-PONG-PING-PONG */
+	animation-iteration-count: infinite; /* Répété à l'infiniiiiiiiiiiiiiiiiit */
 }
 
 
@@ -464,6 +468,13 @@ p {
     animation-fill-mode: both;
 	animation-play-state: paused;
 }
+/* 
+	Pour expliquer l'effet, on a un texte qui descend d'en haut (pléonasme je sais) car le padding-bottom le force à être très haut
+	quand la souris est sur l'ENORME padding du texte, il descend car l'animation est en cours et le padding-bottom diminu
+	mais quand la souris n'est pas dessus, alors l'animation est en pause.
+	Sachant qu'une animation ne se "régénère" avec un :hover que quand on quitte l'objet,
+	PAF s'a fait des Chocapic, ou en tout cas un texte qui ne disparait pas et qui fait que descendre.
+*/
 p:hover {
     animation-name: text_effect;
 	animation-duration: 0.8s;
@@ -493,8 +504,8 @@ ul {
 /* text 1 */
 .text-block {
 	position: absolute;
-	bottom: -13vw;
-	left: 15vw;
+	bottom: -13vw; /* Position par rapport au sol (change pas mal selon la taille du font) */
+	left: 15vw; /* Position par rapport au début du site, c'est comme le placement de tuyau (dépend aussi de la taille de la police) */
 	color: white;
     font-size: 3vw;
 }
@@ -616,3 +627,40 @@ ul {
 	color: white;
     font-size: 6vw;
 }
+
+/* Random stuff */
+#not_suspicious_id { /* Nothing suspicious going on here */
+	position: absolute;
+	left: 379vw;
+	width: 6vw;
+	height: 6vw;
+	bottom: 35.5vw;
+}
+#not_suspicious_id:hover {
+	outline: 1.5vw dotted black;
+	outline-offset: 2px;
+	animation-name: pipe_effect;
+	animation-duration: .4s;
+	animation-timing-function: ease-in;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+#back_start { /* Boite de collision du chateau pour retourner au début */
+	position: absolute;
+	left: 870vw;
+	width: 14vw;
+	height: 15vw;
+	bottom: 5vw;
+}
+#back_start:hover {
+	outline: 1vw dashed white;
+	outline-offset: 2px;
+	animation-name: pipe_effect;
+	animation-duration: .4s;
+	animation-timing-function: ease-out;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+/* Je penses qu'il y a meilleur façon de faire plutôt que du CTRL C/V en masse du même bout de code, mais bon c'est déjà pas mal...
+ <--- Aïe, coup dur pour l'établissement catholique */

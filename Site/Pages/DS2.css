@@ -12,7 +12,8 @@ body {
     src: url("../Police/Visitor2.ttf");
 }
 
-h1 {position:relative;
+h1 {
+	position:relative;
     text-align:center;
     color: white;
     font-size: 300%;
@@ -20,10 +21,14 @@ h1 {position:relative;
     top: -100;
 }
 
-#Pipe {top: -15px;
+#Pipe {
+	top: -15px;
 }
-#texte {margin-left: 8%;
-        text-align:center;
-        margin-right: 8%}
-img {position: relative;
+#texte {
+	margin-left: 8%;
+    text-align:center;
+    margin-right: 8%;
+}
+img {
+	position: relative;
 }

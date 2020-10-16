@@ -12,19 +12,27 @@ body {
     src: url("../Police/Visitor2.ttf");
 }
 
-h1 {position:relative;
+h1 {
+	position:relative;
     text-align:center;
     color: white;
     font-size: 250%;
     font-family: "Pixel";
     top: -100;
 }
-img {position: relative; top: 100px; }
-#Pipe {top: -15px;
+img {
+	position: relative;
+	top: 100px;
 }
-#texte {margin-left: 10%;
-        text-align:justify;
-        margin-right: 40%}
-#Gameboy{margin-left: 110%;
-         top:-400px;
+#Pipe {
+	top: -15px;
+}
+#texte {
+	margin-left: 10%;
+    text-align:justify;
+    margin-right: 40%;
+}
+#Gameboy{
+	margin-left: 110%;
+    top:-400px;
 }
